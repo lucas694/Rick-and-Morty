@@ -1,0 +1,9 @@
+.Footer{
+    @apply flex flex-row w-[100%] justify-center items-center bg-[#202329]
+    h-[60px] text-[#9e9e9e] text-xs text-center font-medium mt-10 border-t-[1px] border-[#3c3e44]
+
+}
+
+.FooterName{
+    @apply text-[#fff] text-xs font-semibold border-b-[1px] border-[#ff9800]
+}
