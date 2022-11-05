@@ -1,5 +1,6 @@
 .ApiCardContent{
     @apply flex flex-col w-[100%] items-center bg-[#202329]
+    xl:flex-row xl:mt-10 xl:flex-wrap xl:justify-center
 }
 .PrevIcon{
     @apply w-16 h-16 text-slate-400 opacity-75 cursor-pointer fixed top-1/2 left-2 transform -translate-y-1/2

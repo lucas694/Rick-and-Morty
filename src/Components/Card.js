@@ -12,6 +12,9 @@ const Card = (props) => {
   const isAlive = //Verifica se o personagem está vivo ou morto
     props.status === "Alive"
 
+  const isUnknown = //Verifica se o personagem está vivo ou morto
+      props.status === "unknown"
+
   useEffect(() => {
     axios.get(BaseUrl)
       .then((response) => {
@@ -28,7 +31,7 @@ const Card = (props) => {
       <div className={"DescCard"}>
         <span className={"NomeCard"}>{props.Nome}</span>
         <span className={"StatusDesc"}>
-          <GrStatusGoodSmall className={ isAlive ? "StatusAlive" : "StatusDead"}/>
+          <GrStatusGoodSmall className={ isAlive ? "StatusAlive" : "StatusDead" }/>
           {props.status} - {props.Especie}
         </span>
         <span className={"LocalDesc"}>
@@ -37,7 +40,7 @@ const Card = (props) => {
         </span>
         <span className={"EpisodeDesc"}>
           <h3 className={"LocalTittle"}>First seen in: </h3>
-          {props.Episodio.name}
+          {props.Episodio}
         </span>
       </div>
 

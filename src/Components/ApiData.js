@@ -28,11 +28,11 @@ const ApiData = () => {
   const takeEpisode = () => {
     axios.get(BaseEpisode)
       .then((response) => {
-        setBaseEpisode(response.data.results)
+        setBaseEpisode(response.results.name)
         console.log(BaseEpisode)
       })
       .catch((error) => {
-        console.log(error)
+        console.log("erro")
       })
   }
   useEffect(() => {
@@ -73,7 +73,7 @@ function prevPage(){
                   status={item.status}
                   Especie={item.species}
                   Localizacao={item.location.name}
-                  Episodio={item.episode}
+                  Episodio={takeEpisode()}
             />
           </div>
         ))

@@ -1,10 +1,13 @@
 .CardContainer{
-    @apply flex flex-col bg-[#3c3e44] rounded-[8px] shadow-xl
-    w-[340px]  overflow-hidden mt-10
+    @apply flex flex-col bg-[#3c3e44] rounded-[8px] shadow-xl w-[340px] overflow-hidden mt-10
+    md:flex-row md:w-[550px] md:mt-10
+    xl:w-[650px] xl:mt-10 xl:flex-row xl:m-5 xl:h-[250px]
 }
 
 .ImgCard{
     @apply w-full h-[330px] object-cover
+    md:w-[36%] md:h-[240px]
+    xl:h-[250px]
 }
 .DescCard{
     @apply pl-4 pt-2
